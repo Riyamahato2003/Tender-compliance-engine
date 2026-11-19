@@ -1,0 +1,73 @@
+# Environment
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / OS
+.DS_Store
+._*
+.idea/
+.vscode/
+
+# Local data / uploads
+# apps/web/lib/data/ contains typed design data objects — NOT ignored
+/.data/
+apps/api/data/
+.local/
+apps/web/.local/forensic-traces/
+uploads/
+*.sqlite3
+test.db
+
+# Redis runtime artifacts (local dev)
+dump.rdb
+
+# Generated exports
+stress-test-fixtures/
+exports/
+output/
+examples/
+test.png
+*.xlsx
+*.docx
+
+# Secrets / credentials
+*.pem
+*.key
+credentials.json
+
+# PR body templates and lock files
+.cp*-pr-body.md
+apps/api/uv.lock
+
+# Playwright
+apps/web/test-results/
+apps/web/playwright-report/
+apps/web/.playwright/
+appendonlydir/
